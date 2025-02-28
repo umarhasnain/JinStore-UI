@@ -1,0 +1,62 @@
+const ProductData = [
+    {
+        name: "100 Percent Apple Juice – 64 fl oz Bottle",
+        image: "/assets/images/a1.png", 
+        discount: 75,
+        isOrganic: true,
+        isCold:false,
+        rating: 4.5,
+        discountedPrice: "0.50",
+        originalPrice: "1.99",
+    },
+    {
+        name: "Great Value Rising Crust Frozen Pizza, Supreme",
+        image: "/assets/images/a1.png", 
+        discount: 11,
+        isOrganic: false,
+        isCold:true,
+        rating: 4.5,
+        discountedPrice: "8.99",
+        originalPrice: "9.99",
+    },
+    {
+        name: "Simply Orange Pulp Free Juice – 52 fl oz",
+        image: "/assets/images/a2.png", 
+        discount: 41,
+        isOrganic: true,
+        rating: 4.5,
+        discountedPrice: "2.45",
+        originalPrice: "4.13",
+    },
+    {
+        name: "California Pizza Kitchen Margherita, Crispy Thin Crus…",
+        image: "/assets/images/a3.png", 
+        discount: 21,
+        isOrganic: false,
+        isCold:true,
+        rating: 4.5,
+        discountedPrice: "11.77",
+        originalPrice: "14.77",
+    },
+    {
+        name: "Cantaloupe Melon Fresh Organic Cut",
+        image: "/assets/images/a4.png", 
+        discount: 59,
+        isOrganic: true,
+        rating: 4.5,
+        discountedPrice: "1.25",
+        originalPrice: "2.89",
+    },
+    {
+        name: "Angel Soft Toilet Paper, 9 Mega Rolls",
+        image: "/assets/images/a5.png", 
+        discount: 18,
+        isOrganic: true,
+        rating: 4.5,
+        discountedPrice: "14.12",
+        originalPrice: "17.12",
+    },
+    
+]
+
+export default ProductData
