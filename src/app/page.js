@@ -9,19 +9,29 @@ import TextData from "@/utils/dummyText";
 import PromoCards from "@/components/PromoCard";
 import PopularCompanies from "@/components/Reviews";
 import Footer from "@/components/Footer";
+import CardSection from "@/components/CardSection";
+import ProductSection from "@/components/ProductSection";
+import Sidebar from "@/components/Sidebar";
+import HomePageLayout from "@/components/Carousel";
 
 const Page = () => {
   console.log("data---", TextData);
 
   return (
     <div className="min-h-screen w-full">
-     
+ 
       <Navbar />
 
-     
-      <div className="flex flex-col items-center w-full py-4">
-        <SliderComponent />
-      </div>
+     <HomePageLayout/>
+          {/* <div className="flex flex-col lg:flex-row items-center w-full py-8 md:py-12 px-4 md:px-12 lg:px-24 space-y-8 lg:space-y-0 lg:space-x-8">
+       <div className="w-full lg:w-1/2">
+         <Sidebar />
+       </div>
+       <div className="w-full lg:w-1/2">
+         <SliderComponent />
+       </div>
+     </div>
+   */}
 
 
       <div className="container mx-auto py-4 px-4 md:px-8 lg:px-16">
@@ -30,6 +40,8 @@ const Page = () => {
       <Card />
       <Product />
       <PromoCards/>
+      <CardSection/>
+      <ProductSection />
       <PopularCompanies/>
       <Footer/>
     </div>

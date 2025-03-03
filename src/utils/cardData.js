@@ -20,6 +20,20 @@ const CardData = [
         desc:"Only this week. Don’t miss...",
         btnText:"Shop Now"
     },
+    {
+        image:"/assets/images/banner-08.jpg.png",
+        para:"Only This Week",
+        title:"Make your grocery shopping easy with us",
+        desc:"Only this week. Don’t miss...",
+        btnText:"Shop Now"
+    },
+    {
+        image:"/assets/images/banner-09.jpg.png",
+        para:"Only This Week",
+        title:"Get your everyday needs here with us",
+        desc:"A different kind of grocery store",
+        btnText:"Shop Now"
+    },
 ]
 
 

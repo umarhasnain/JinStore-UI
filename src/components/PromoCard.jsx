@@ -26,7 +26,7 @@ const promoData = [
 
 const PromoCards = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-20 py-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {promoData.map((item, index) => (
           <div
@@ -35,10 +35,10 @@ const PromoCards = () => {
             className="relative bg-cover bg-center shadow-lg rounded-xl p-6 flex flex-col justify-between h-[400px] overflow-hidden transition-transform transform hover:scale-105"
           >
             {/* Overlay for better readability */}
-            <div className="absolute inset-0 bg-black/30 rounded-xl"></div>
+            <div className="absolute inset-0 rounded-xl"></div>
 
             {/* Text Content */}
-            <div className="relative z-10 text-white">
+            <div className="relative z-10 text-black">
               <p className="text-orange-400 font-semibold text-sm">Only This Week</p>
               <h2 className="text-lg font-bold mt-2 leading-tight">{item.title}</h2>
               <p className="text-sm mt-1">{item.description}</p>

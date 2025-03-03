@@ -5,7 +5,7 @@ import React from "react";
 
 const Section1 = () => {
   return (
-    <div className="container mx-auto px-4 py-6">
+    <div className="container mx-auto px-4 py-6 text-[13px]">
       {/* Responsive Grid for all screen sizes */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {TextData.map((item, i) => (
@@ -26,8 +26,8 @@ const Section1 = () => {
 
             {/* Text Content */}
             <div className="flex-1">
-              <h1 className="text-lg md:text-xl font-bold text-gray-800">{item.tittle}</h1>
-              <p className="text-sm md:text-base text-gray-600">{item.desc}</p>
+              <h1 className="text-text-[16px] md:text-[16px] font-bold text-gray-800">{item.tittle}</h1>
+              <p className="text-text-[13px] md:text-[13px] text-gray-600">{item.desc}</p>
             </div>
           </div>
         ))}

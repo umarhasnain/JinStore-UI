@@ -2,7 +2,7 @@ import itemData from '@/utils/productCard';
 import Image from 'next/image';
 import React from 'react';
 
-const ItemCard = () => {
+const ProductSection = () => {
   return (
     <div className="px-4 py-12">
       {/* Header Section */}
@@ -18,7 +18,7 @@ const ItemCard = () => {
 
       {/* Product Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 px-20 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
-        {itemData.slice(0,4).map((item, i) => (
+        {itemData.slice(6).map((item, i) => (
           <div
             key={i}
             className="bg-white shadow-md rounded-xl p-4 w-full max-w-[300px] mx-auto relative border transition-transform hover:scale-105"
@@ -80,4 +80,4 @@ const ItemCard = () => {
   );
 };
 
-export default ItemCard;
+export default ProductSection;
