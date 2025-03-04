@@ -8,6 +8,10 @@ ul > li {
 
 }
 
+body{
+  font-family: Inter;
+
+}
 
 /* 
 @layer utilities {

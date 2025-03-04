@@ -13,9 +13,32 @@ import CardSection from "@/components/CardSection";
 import ProductSection from "@/components/ProductSection";
 import Sidebar from "@/components/Sidebar";
 import HomePageLayout from "@/components/Carousel";
+import ProductCard from "@/components/ProCard";
 
 const Page = () => {
-  console.log("data---", TextData);
+
+  const products = [
+    {
+      name: "Marketside Fresh Organic Bananas, Bunch",
+      image: "/images/bananas.png",
+      price: 0.89,
+      oldPrice: 1.99,
+      discount: 56,
+      rating: 3,
+      reviews: 2,
+      organic: true,
+    },
+    {
+      name: "Lay’s Classic Potato Chips, 13 oz",
+      image: "/images/lays.png",
+      price: 1.0,
+      oldPrice: 1.99,
+      discount: 50,
+      rating: 4,
+      reviews: 3,
+      organic: false,
+    },
+  ];
 
   return (
     <div className="min-h-screen w-full">
@@ -41,6 +64,11 @@ const Page = () => {
       <Product />
       <PromoCards/>
       <CardSection/>
+      {/* <div className="flex gap-6 p-6">
+      {products.map((product, index) => (
+        <ProductCard key={index} product={product} />
+      ))}
+    </div> */}
       <ProductSection />
       <PopularCompanies/>
       <Footer/>

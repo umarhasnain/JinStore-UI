@@ -17,11 +17,11 @@ const ProductSection = () => {
       </div>
 
       {/* Product Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 px-20 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 px-20 py-12  md:grid-cols-3 lg:grid-cols-4 justify-center">
         {itemData.slice(6).map((item, i) => (
           <div
             key={i}
-            className="bg-white shadow-md rounded-xl p-4 w-full max-w-[300px] mx-auto relative border transition-transform hover:scale-105"
+            className="bg-white shadow-md rounded-md p-4 w-full max-w-[300px] mx-auto relative  transition-transform hover:scale-105"
           >
             {/* Discount Badge */}
             {item.discount && (
@@ -70,7 +70,7 @@ const ProductSection = () => {
             </div>
 
             {/* Add to Cart Button */}
-            <button className="w-full mt-3 bg-purple-500 text-white py-2 rounded-lg text-sm font-semibold hover:bg-purple-600 transition">
+            <button className="w-full mt-3 bg-white text-purple-500 border py-2 rounded-3xl text-sm font-semibold hover:bg-purple-600 hover:text-black transition">
               Add to cart
             </button>
           </div>

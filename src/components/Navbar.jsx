@@ -20,7 +20,7 @@ export default function Navbar() {
     <nav className="w-full shadow-md">
       {/* Top Bar */}
       <div className="bg-purple-600 text-white text-xs sm:text-sm text-center py-2 px-4 flex flex-wrap justify-evenly gap-16 items-center">
-        <span>FREE delivery & 40% Discount for next 3 orders!</span>
+        <span className="inter.className">FREE delivery & 40% Discount for next 3 orders!</span>
         <span>Sale ends in: <strong>47 days 06 hours 55 minutes 51 sec</strong></span>
       </div>
       
@@ -29,6 +29,7 @@ export default function Navbar() {
         <div className="hidden md:flex gap-2">
           <a href="#" className="hover:text-purple-600">About Us</a>
           <a href="#" className="hover:text-purple-600">My Account</a>
+          
           <a href="#" className="hover:text-purple-600">Wishlist | </a>
           <a href="#" className="hover:text-purple-600">Delivery: <span>7:00 AM - 11:00 PM</span></a>
         </div>

@@ -31,7 +31,7 @@ export default function Sidebar() {
             key={index}
             className="flex justify-between  items-center p-2 hover:bg-gray-100 rounded cursor-pointer"
           >
-            <span className="flex items-center ">{item.icon} {item.name}</span>
+            <span className="flex items-center gap-2">{item.icon} {item.name}</span>
             {/* <ChevronRightIcon className="w-4 h-4 text-gray-500" /> */}
           </li>
         ))}
