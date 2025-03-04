@@ -2,8 +2,6 @@ import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { FaAppleAlt, FaFish, FaEgg, FaBreadSlice, FaCoffee, FaSnowflake, FaCookie, FaLeaf, FaHome, FaHeartbeat, FaBaby } from "react-icons/fa";
 
-// import { ChevronRightIcon } from "@heroicons/react/solid";
-
 const categories = [
     { name: "Fruits & Vegetables", icon: <FaAppleAlt className="text-black" /> },
     { name: "Meats & Seafood", icon: <FaFish className="text-black" /> },
@@ -32,7 +30,6 @@ export default function Sidebar() {
             className="flex justify-between  items-center p-2 hover:bg-gray-100 rounded cursor-pointer"
           >
             <span className="flex items-center gap-2">{item.icon} {item.name}</span>
-            {/* <ChevronRightIcon className="w-4 h-4 text-gray-500" /> */}
           </li>
         ))}
       </ul>
