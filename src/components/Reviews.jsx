@@ -59,7 +59,7 @@ const PopularCompanies = () => {
         {companies.map((company, index) => (
           <div
             key={index}
-            className="border p-6 rounded-lg shadow-sm bg-white hover:shadow-md transition"
+            className="border border-gray-200 p-6 rounded-lg shadow-sm bg-white hover:shadow-md transition"
           >
             {/* Company Profile */}
             <div className="flex items-center gap-4">

@@ -81,7 +81,7 @@ const SliderComponent = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false, // Hide arrows for a clean UI
+    arrows: false, 
   };
 
   return (

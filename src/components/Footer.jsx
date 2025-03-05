@@ -19,7 +19,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter your email address"
-              className="p-3 w-full md:w-80 rounded-l-lg border outline-none"
+              className="p-3 w-full md:w-80 rounded-l-lg border border-gray-200 outline-none"
             />
             <button className="bg-purple-600 text-white px-5 py-3 rounded-r-lg hover:bg-purple-700 transition">
               SEND
