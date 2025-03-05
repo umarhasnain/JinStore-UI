@@ -45,7 +45,7 @@ const StarRating = ({ rating }) => {
 
 const PopularCompanies = () => {
   return (
-    <section className="container mx-auto px-4 py-8">
+    <section className="container mx-auto px-24 py-8">
       {/* Heading */}
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-xl font-semibold">Popular Companies</h2>

@@ -8,10 +8,10 @@ const ProductSection = () => {
       {/* Header Section */}
       <div className="flex flex-wrap justify-between items-center mb-6 px-24">
         <div>
-          <h1 className="text-2xl font-bold text-gray-800">New Arrivals</h1>
-          <p className="text-sm text-gray-600">Don't miss this opportunity at a special discount just for this week.</p>
+          <h1 className="text-2xl font-bold text-gray-800">Best Sellers</h1>
+          <p className="text-sm text-gray-600">Some of the new products arriving this weeks</p>
         </div>
-        <button className="bg-purple-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-purple-600 transition">
+        <button className="bg-white text-black border-2 border-gray-200  px-4 py-1 rounded-3xl text-sm font-semibold hover:bg-slate-200 transition">
           View All
         </button>
       </div>

@@ -12,10 +12,10 @@ const Navbar = () => {
   const [shopDropdown, setShopDropdown] = useState(false);
   const [trendingDropdown, setTrendingDropdown] = useState(false);
   return (
-    <nav className="w-full bg-white shadow-md font-Inter px-6 lg:px-8 py-4 text-[15px] flex flex-col lg:flex-row justify-between items-start lg:items-center">
+    <nav className="w-full bg-white shadow-md font-Inter px-6 lg:px-2 py-4 text-[12px] flex flex-col lg:flex-row justify-between gap-[80px] items-start lg:items-center">
       
     {/* Menu Items */}
-    <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-4 lg:space-y-0 lg:space-x-6 w-full">
+    <div className="flex flex-col font-bold lg:flex-row items-start lg:items-center space-y-4 lg:space-y-0 lg:space-x-4 w-full">
       <Link href="#" className="text-purple-600 font-medium">Home</Link>
 
       {/* Shop Dropdown */}
@@ -35,18 +35,19 @@ const Navbar = () => {
         )}
       </div>
 
-      <Link href="#" className="text-gray-700">Fruits & Vegetables</Link>
+      <Link href="#" className="text-gray-700">Fruits</Link>
+      <Link href="#" className="text-gray-700"> Vegetables</Link>
       <Link href="#" className="text-gray-700">Beverages</Link>
       <Link href="#" className="text-gray-700">Blog</Link>
       <Link href="#" className="text-gray-700">Contact</Link>
     </div>
 
     {/* Right Side - Trending Products & Sale */}
-    <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-4 lg:space-y-0 lg:space-x-6 w-full mt-4 lg:mt-0">
+    <div className="flex flex-col font-bold lg:flex-row items-start lg:items-center space-y-4 lg:space-y-0 lg:space-x-6 w-full mt-4 lg:mt-0">
       {/* Trending Dropdown */}
       <div className="relative">
         <button
-          className="flex items-center space-x-1 text-gray-700"
+          className="flex  items-center space-x-1 text-gray-700"
           onClick={() => setTrendingDropdown(!trendingDropdown)}
         >
           <span>Trending Products</span> <FaChevronDown size={12} />

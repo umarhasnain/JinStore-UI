@@ -15,6 +15,7 @@ import Sidebar from "@/components/Sidebar";
 import HomePageLayout from "@/components/Carousel";
 import ProductCard from "@/components/ProCard";
 import FeatureProduct from "@/components/FeatureProduct";
+import Image from "next/image";
 
 const Page = () => {
 
@@ -47,15 +48,6 @@ const Page = () => {
       <Navbar />
 
      <HomePageLayout/>
-          {/* <div className="flex flex-col lg:flex-row items-center w-full py-8 md:py-12 px-4 md:px-12 lg:px-24 space-y-8 lg:space-y-0 lg:space-x-8">
-       <div className="w-full lg:w-1/2">
-         <Sidebar />
-       </div>
-       <div className="w-full lg:w-1/2">
-         <SliderComponent />
-       </div>
-     </div>
-   */}
 
 
       <div className="container mx-auto py-4 px-4 md:px-8 lg:px-16">
@@ -64,6 +56,7 @@ const Page = () => {
       <Card />
       <Product />
       <PromoCards/>
+      <FeatureProduct/>
       <CardSection/>
       {/* <div className="flex gap-6 p-6">
       {products.map((product, index) => (
@@ -71,7 +64,9 @@ const Page = () => {
       ))}
     </div> */}
       <ProductSection />
-      <FeatureProduct/>
+      <div className="w-full">
+        <Image src='/assets/images/div.site-promo.png' alt="image" height={50} width={1500}></Image>
+      </div>
       <PopularCompanies/>
       <Footer/>
     </div>

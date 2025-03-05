@@ -4,20 +4,20 @@ import React from 'react';
 
 const ItemCard = () => {
   return (
-    <div className="px-4 py-12">
+    <div className="px-4 py-16">
       {/* Header Section */}
-      <div className="flex flex-wrap justify-between items-center mb-6 px-24">
+      <div className="flex flex-wrap justify-between items-center mb-6  px-24">
         <div>
           <h1 className="text-2xl font-bold text-gray-800">New Arrivals</h1>
           <p className="text-sm text-gray-600">Don't miss this opportunity at a special discount just for this week.</p>
         </div>
-        <button className="bg-purple-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-purple-600 transition">
+        <button className="bg-white text-black border-2 border-gray-200  px-4 py-1 rounded-3xl text-sm font-semibold hover:bg-slate-200 transition">
           View All
         </button>
       </div>
 
       {/* Product Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 px-20 md:grid-cols-3 lg:grid-cols-4  justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 px-20 md:grid-cols-3 lg:grid-cols-4  justify-center py-4">
         {itemData.slice(0,4).map((item, i) => (
           <div
             key={i}

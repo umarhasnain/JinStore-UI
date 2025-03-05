@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Search, ShoppingCart, Heart, User, MapPin, ChevronDown, Menu } from "lucide-react";
 import Image from "next/image";
+import { FaSearch } from 'react-icons/fa';
 
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -85,13 +86,14 @@ export default function Navbar() {
 
         {/* Search Bar */}
         {!isMobile && (
-          <div className="flex-grow mx-4 max-w-xl">
-            <input
-              type="text"
-              placeholder="Search for products, categories or brands..."
-              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-            />
-          </div>
+         <div className="flex-grow mx-4 max-w-xl relative">
+         <input
+           type="text"
+           placeholder="Search for products, categories or brands..."
+           className="w-full px-4 py-2 border border-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-purple-500"
+         />
+         <FaSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+       </div>
         )}
 
         {/* Icons */}

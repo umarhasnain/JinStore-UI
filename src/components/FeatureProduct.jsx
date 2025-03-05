@@ -4,7 +4,7 @@ import { FaRegHeart } from 'react-icons/fa';
 const FeaturedProductList = () => {
   return (
     <div>
-       <div className="flex flex-wrap justify-between items-center mb-6 px-24 py-2">
+       <div className="flex flex-wrap justify-between items-center mb-6 px-24 py-12">
         <div className='flex items-center gap-2 flex-wrap'>
           <h1 className="text-2xl font-bold text-gray-800">Featured Products</h1>
           <p className="text-sm text-gray-600">Do not miss the current offers until the end of March.</p>
