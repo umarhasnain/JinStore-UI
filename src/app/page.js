@@ -14,6 +14,7 @@ import ProductSection from "@/components/ProductSection";
 import Sidebar from "@/components/Sidebar";
 import HomePageLayout from "@/components/Carousel";
 import ProductCard from "@/components/ProCard";
+import FeatureProduct from "@/components/FeatureProduct";
 
 const Page = () => {
 
@@ -70,6 +71,7 @@ const Page = () => {
       ))}
     </div> */}
       <ProductSection />
+      <FeatureProduct/>
       <PopularCompanies/>
       <Footer/>
     </div>
